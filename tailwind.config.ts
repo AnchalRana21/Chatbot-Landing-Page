@@ -10,7 +10,22 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        foreground: "var(--foreground)"
+      },
+      screens: {
+        mobile: {
+          max: "1024px",
+          min: "0px",
+        },
+        desktop: {
+          max: "2048px",
+          min: "1025px",
+        },
+      },
+      fontFamily: {
+        sans: ["-apple-system", "BlinkMacSystemFont", "Helvetica", "Lato", "Arial", "Segoe UI", "Verdana", "sans-serif"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+        "Basier Circle": ["-apple-system", "BlinkMacSystemFont", "Helvetica", "Lato", "Arial", "Segoe UI", "Verdana", "sans-serif"],
       },
     },
   },
